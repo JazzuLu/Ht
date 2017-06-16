@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+.stage {width:800px; height:600px; background:#eee; margin:50px auto; position:relative;}
+	.container {width:310px; height:100px; position:absolute; left:0; top:0; right:0; bottom:0; margin:auto; transform-style:preserve-3d; transition:all 1s;}
+	.container p {width:310px; height:100px; position:absolute; left:0; top:0; right:0; bottom:0; margin:auto; border-radius:5px; box-shadow:0 3px 15px #666;}
+	.container p:nth-child(1) {background:url(images/jilt.png); transform:translateZ(50px);}
+	.container p:nth-child(2) {background:-webkit-linear-gradient(#E9EEF2,#BECAD9); transform:translateY(50px) rotateX(-90deg);}
+	.container:hover {transform:rotateX(90deg);}
+
+</style>
+</head>
+
+<body>
+<div class="stage">
+    <div class="container">
+        <p></p>
+        <p>帅雷雷</p>
+    </div>
+</div>
+</body>
+</html>

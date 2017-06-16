@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*index*/
+.banner {height:457px; background:url(../images/banner.jpg) no-repeat;}
+.link {height:387px; background:#f7f7f7;}
+	.index_tit {padding:50px 0 30px; text-align:center;}
+		.index_tit h1 {font-size:24px; font-weight:normal; margin-bottom:17px;}
+		.index_tit span {color:#999;}
+	.linkimg {width:1134px; margin:0 auto; border-left:1px #ededed solid; border-top:1px #ededed solid;}
+		.linkimg a {float:left; width:188px; height:100px; border-right:1px #ededed solid; border-bottom:1px #ededed solid; text-align:center; background:#fff;}
+			.linkimg a img {vertical-align:middle; display:inline-block;}
+			.linkimg a span {vertical-align:middle; display:inline-block; height:100%; width:0;}
+.oad {height:543px; background:#1a1b1f;}
+	.oadlayout {width:1198px; height:543px; margin:0 auto;}
+	.oadlayout dl {width:340px; height:325px; float:left; margin:0 29px; position:relative;}
+		.oadlayout dl dt {width:130px; height:130px; background:url(../images/img01.png); position:absolute; left:50%; margin-left:-65px;}
+			#od2 {background-position:center -162px;}
+			#od3 {background-position:center -324px;}
+		.oadlayout dl dd {height:165px; padding:95px 40px 0; background:#cecfd1; margin-top:65px; text-align:center;}
+			.oadlayout dl dd h3 {color:#f75a55; font-size:16px; margin-bottom:23px;}
+.sc {width:1170px; height:837px; margin:0 auto;}
+	.scbox {width:1170px; height:607px;}
+		.scbtn {height:47px; width:800px; margin:0 auto 18px; background:url(../images/bg_sc.jpg) repeat-x;}
+			.scbtn li {float:left;}
+				.scbtn li a {display:block; width:200px; height:47px; text-align:center; line-height:40px; color:#fff;}
+				.scbtn li a:hover {background:url(../images/bg_sc_h.jpg) no-repeat;}
+		.sclist {width:1170px; height:572px; overflow:hidden;}
+		#sc1,#sc2,#sc3,#sc4 {width:1170px; height:572px;}
+		.sclist a {float:left; width:360px; height:255px; margin:0 15px 30px;}
+.newslist {height:348px; background:#f2f2f2; color:#888;}
+	.newslist ul {width:320px; float:left; margin-right:60px;}
+		.newslist ul h2 {padding-top:35px; padding-bottom:15px; font-size:16px;}
+			.newslist ul li {margin-bottom:5px; overflow:hidden;}
+				.newslist a {float:left; width:256px; color:#888;}
+				.newslist span {float:right;}
+			.newslist ul>a {margin-top:15px;}
+
+/*content*/
+.case,.about {width:1170px; min-height:700px; _height:700px; margin:60px auto;overflow:hidden;}
+	.case a,.office a {float:left; width:360px; height:255px; margin:0 15px 30px;}
+
+.about>dl {width:1140px; margin:0 auto; height:231px;}
+	.about>dl dt {float:left; margin-right:50px;}
+	.about>dl dd {height:230px; width:737px; border-bottom:1px #eee solid; float:right;}
+		.about>dl dd p {line-height:24px;}
+.about h4 {font-size:16px; font-weight:normal; margin-bottom:30px;}
+.office {text-align:center; overflow:hidden;}
+.mission {text-align:center; overflow:hidden; margin:40px 0px;}
+	.mission dl {float:left; width:360px; margin:0 15px; border-bottom:1px #eee solid;}
+	.mission dl dd {height:80px; padding-top:20px;}

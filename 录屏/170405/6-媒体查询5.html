@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+html,body {height:100%;}
+body {display:flex; flex-wrap:wrap;}
+@media screen and (min-width:960px) {
+	.left {background:#f00; flex:0 0 15%;}
+	.center {background:#0f0; flex:1}
+	.right {background:#00f; flex:0 0 15%;}
+}
+@media screen and (min-width:800px) and (max-width:960px) {
+	.left {background:#f00; flex:0 0 15%;}
+	.center {background:#0f0; flex:1}
+	.right {background:#00f; flex:0 0 100%;}
+}
+@media screen and (max-width:800px) {
+	.left {background:#f00; flex:0 0 100%;}
+	.right {background:#00f; flex:0 0 100%;}
+	.center {background:#0f0;  flex:0 0 100%;}
+}
+</style>
+</head>
+
+<body>
+<div class="left">only用来指定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器。其实only很多时候是用来对那些不支持Media Query但却支持Media Type的设备隐藏样式表的。其主要有：支持媒体特性的设备，正常调用样式，此时就当only不存在；表示不支持媒体特性但又支持媒体类型的设备，这样就会不读样式，因为其先会读取only而不是screen；另外不支持Media Queries的浏览器，不论是否支持only，样式都不会被采用。
+</div>
+<div class="center">only用来指定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器。其实only很多时候是用来对那些不支持Media Query但却支持Media Type的设备隐藏样式表的。其主要有：支持媒体特性的设备，正常调用样式，此时就当only不存在；表示不支持媒体特性但又支持媒体类型的设备，这样就会不读样式，因为其先会读取only而不是screen；另外不支持Media Queries的浏览器，不论是否支持only，样式都不会被采用。
+</div>
+<div class="right">only用来指定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器。其实only很多时候是用来对那些不支持Media Query但却支持Media Type的设备隐藏样式表的。其主要有：支持媒体特性的设备，正常调用样式，此时就当only不存在；表示不支持媒体特性但又支持媒体类型的设备，这样就会不读样式，因为其先会读取only而不是screen；另外不支持Media Queries的浏览器，不论是否支持only，样式都不会被采用。
+</div>
+</body>
+</html>

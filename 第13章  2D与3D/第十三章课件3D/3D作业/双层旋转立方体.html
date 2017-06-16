@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<style>
+			@-webkit-keyframes one{
+				from{
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+				to{ transform: rotateX(360deg) rotateY(360deg);}
+			}
+			body{
+				background: #0000FF;
+			}
+			.a{
+				margin-top:350px;
+				perspective: 1000px;
+			}
+			.b{
+				width:200px; height: 200px;
+				margin: auto;
+				transform-style: preserve-3d;
+				animation: one 5s infinite linear;
+			}
+			.b>div{
+				height: 200px;
+				width: 200px;
+				border: solid 1px #fff;
+				position: absolute;
+				background: #333;
+				opacity: 0.9;
+				color: #FFFFFF;
+				line-height: 200px;
+				text-align: center;
+			}
+			.out_front{
+				transform: translateZ(100px);
+			}
+			.out_back{
+				transform: translateZ(-100px) rotateY(180deg);
+			}
+			.out_left{
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			.out_right{
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			.out_top{
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			.out_bottom{
+				transform: rotateX(-90deg) translateZ(100px);	
+			}
+			.b>span{
+				display: block;
+				
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				height: 100px;
+				width: 100px;
+				background: #efefef;
+				border: solid #000 1px;
+			}
+			.in_front{
+				transform: translateZ(50px);
+			}
+			.in_back{
+				transform: translateZ(-50px) rotateY(180deg);
+			}
+			.in_left{
+				transform: rotateY(90deg) translateZ(50px);
+			}
+			.in_right{
+				transform: rotateY(-90deg) translateZ(50px);
+			}
+			.in_top{
+				transform: rotateX(90deg) translateZ(50px);
+			}
+			.in_bottom{
+				transform: rotateX(-90deg) translateZ(50px);	
+			}
+			.b:hover .out_front{
+				transform: translateZ(200px);
+			}
+			.b:hover .out_back{
+				transform: translateZ(-200px) rotateY(180deg);
+			}
+			.b:hover .out_left{
+				transform: rotateY(90deg) translateZ(200px);
+			}
+			.b:hover .out_right{
+				transform: rotateY(-90deg) translateZ(200px);
+			}
+			.b:hover .out_top{
+				transform: rotateX(90deg) translateZ(200px);
+			}
+			.b:hover .out_bottom{
+				transform: rotateX(-90deg) translateZ(200px);	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b">
+				<div class="out_front">前面</div>
+				<div class="out_back">后面</div>
+				<div class="out_left">左面</div>
+				<div class="out_right">右面</div>
+				<div class="out_top">上面</div>
+				<div class="out_bottom">下面</div>
+				
+				<span class="in_front"></span>
+				<span class="in_back"></span>
+				<span class="in_left"></span>
+				<span class="in_right"></span>
+				<span class="in_top"></span>
+				<span class="in_bottom"></span>
+			</div>
+		</div>
+		
+
+	</body>
+</html>

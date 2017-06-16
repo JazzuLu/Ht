@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+ul li {list-style:none;}
+.stage {width:800px; height:500px; background:#eee; margin:50px auto; position:relative; perspective:1200px;}
+img {display:block;}
+.container {width:128px; height:94px; background:#000; position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; transform-style:preserve-3d; transition:all 2s; transform:rotateX(-30deg) rotateY(0);}
+	.container li {width:128px; height:94px; position:absolute; top:0; left:0; bottom:0; right:0; margin:auto;}
+	.container li:nth-child(1) {transform:translateZ(111px);}
+	.container li:nth-child(2) {transform:rotateY(60deg) translateZ(111px);}
+	.container li:nth-child(3) {transform:rotateY(120deg) translateZ(111px);}
+	.container li:nth-child(4) {transform:rotateY(180deg) translateZ(111px);}
+	.container li:nth-child(5) {transform:rotateY(240deg) translateZ(111px);}
+	.container li:nth-child(6) {transform:rotateY(300deg) translateZ(111px);}
+	.container:hover {transform:rotateX(-30deg) rotateY(360deg);}
+</style>
+</head>
+
+<body>
+<div class="stage">
+<ul class="container">
+	<li><img src="images/1.jpg" /></li>
+    <li><img src="images/2.jpg" /></li>
+    <li><img src="images/3.jpg" /></li>
+    <li><img src="images/4.jpg" /></li>
+    <li><img src="images/5.jpg" /></li>
+    <li><img src="images/6.jpg" /></li>
+</ul>
+</div>
+</body>
+</html>

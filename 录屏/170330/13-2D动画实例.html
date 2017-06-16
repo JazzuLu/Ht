@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+.box {width:295px; height:246px; border:1px #eee solid; margin:50px auto; position:relative;}
+	.box img {position:absolute; left:0; top:0; right:0; bottom:0; margin:auto; z-index:-1; transition:all 2s;}
+	.box dl {text-align:center; position:absolute; top:80px; left:50%; margin-left:-45px; transition:all 2s; opacity:0;}
+		.box dl dt {font-weight:bold;}
+	.box a {display:block; width:120px; height:30px; background:#f00; text-align:center; line-height:30px; color:#fff; text-decoration:none; position:absolute; top:115px; left:50%; margin-left:-60px; transition:all 2s; opacity:0;}
+.box:hover img {transform:scale(.5,.5);}
+.box:hover dl {transform:translateY(-60px); opacity:1;}
+.box:hover a {transform:translateY(70px); opacity:1;}
+</style>
+</head>
+
+<body>
+<div class="box">
+    <dl>
+        <dt>Web Design</dt>
+        <dd>sdhdfjfgj</dd>
+    </dl>
+    <a href="#">Take a Look</a>
+	<img src="images/image01.jpg" />
+</div>
+</body>
+</html>

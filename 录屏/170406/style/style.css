@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin:0; padding:0; box-sizing:border-box;}
+ul li {list-style:none;}
+html,body {height:100%;}
+
+html {font-size:20px;} 
+@media only screen and (min-width:401px){ 
+	html {font-size:25px!important; }
+} 
+@media only screen and (min-width:428px){ 
+	html {font-size:26.75px!important; } 
+} 
+@media only screen and (min-width:481px){ 
+	html {font-size:30px!important; } 
+} 
+@media only screen and (min-width:569px){ 
+	html {font-size:35px!important; } 
+} 
+@media only screen and (min-width:641px){ 
+	html {font-size:40px!important; } 
+}
+
+
+body {display:flex; flex-direction:column;}
+
+header {height:2.5rem; background:#0cc440; display:flex; justify-content:center; align-items:center;}
+	header a {width:3.43rem; height:1.43rem; text-align:center; line-height:1.43rem; text-decoration:none; font-size:.69rem; background:#3dd066; color:#a4ecbc;}
+	header a:hover {background:#63d985; color:#fff;}
+	header a:nth-child(1) {border-radius:1.43rem 0 0 1.43rem;}
+	header a:nth-child(2) {border-radius:0 1.43rem 1.43rem 0;}
+	
+
+nav {height:2rem; display:flex;}
+	nav a {flex:1; display:flex; justify-content:center; align-items:center; font-size:.8rem; color:#666; text-decoration:none; border-bottom:1px #d9d9d9 solid;}
+	nav a:hover {color:#08c63e; border-bottom:5px #08c63e solid;}
+
+section {flex:1; padding-top:.29rem; display:flex; flex-wrap:wrap; align-content:flex-start; overflow:auto; justify-content:space-between;}
+	section figure {width:8rem; height:8rem; border:1px #e5e5e5 solid; font-size:.69rem; margin-bottom:.29rem;}
+	section figure img {width:100%;}
+
+@media screen and (max-width:320px) {
+	section figure {width:7.8rem; height:7.8rem;}
+}
+@media screen and (min-width:321px) and (max-width:375px) {
+	section figure {width:9.1rem; height:9.1rem;}
+}
+@media screen and (min-width:641px) and (max-width:768px) {
+	section figure {width:9.4rem; height:9.4rem;}
+}
+@media screen and (min-width:768px) {
+	section figure {width:12.5rem; height:12.5rem;}
+}
+
+footer {height:2.5rem; border-top:1px #d9d9d9 solid; display:flex; justify-content:space-around;}
+	footer a {display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:.69rem; color:#d6d6d6; text-decoration:none;}
+	footer a .iconfont {font-size:1rem;}
+	footer a:hover {color:#0dc13c;}
+	footer a:nth-child(3) {height:3rem; width:3rem; border:1px #d6d6d6 solid; background:#fff; border-radius:3rem; transform:translateY(-.5rem);}
+	footer a:nth-child(3) i {font-size:2rem;}
+
+
+
+
+

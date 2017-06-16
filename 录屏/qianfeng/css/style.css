@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin:0; padding:0;}
+img {border:0; display:block;}
+ul li {list-style:none;}
+body {font:14px/1.5 "微软雅黑"; color:#333;}
+a {color:#333; text-decoration:none;}
+
+.layout {width:1003px; margin:0 auto; overflow:hidden;}
+
+/*header*/
+.header {height:62px; background:#232323;}
+	.logo {width:190px; height:62px; float:left;}
+	.header ul {width:750px; float:right; overflow:hidden;}
+		.header ul li {float:left; background:url(../images/nav_line.jpg) no-repeat right center;}
+			.header ul li a {display:block; height:62px; line-height:62px; padding:0 13px; color:#fff;}
+			.header ul li a:hover {background:#f15a23;}
+
+/*bottom*/
+.bottom {height:215px; background:#222;}
+	.bottom_l,.bottom_c {float:left; height:215px; background:url(../images/bottom_line.jpg) no-repeat right top;}
+	 {float:left;  background:url(../images/bottom_line.jpg) no-repeat right top;}
+	 .bottom_l {width:493px; height:165px; padding-top:50px;}
+	 	.bottom_l ul {float:left; width:70px; font:12px/1.5 "宋体"; text-align:center; margin-right:25px;}
+			.bottom_l ul h3 {color:#fff; font-size:12px; font-weight:normal; margin-bottom:15px;}
+			.bottom_l ul li {margin-bottom:10px;}
+				.bottom_l ul li a {color:#999;}
+	 .bottom_c {width:315px; height:215px;}
+	 .bottom_r {float:right; width:145px; margin-right:16px; padding-top:20px;}
+		 .bottom_r p {width:85px; margin:0 auto; text-align:center;}
+
+/*footer*/
+.footer {height:45px; background:#101010; text-align:center; color:#999; font:12px/45px "宋体";}
+
+
+

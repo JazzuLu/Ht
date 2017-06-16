@@ -1,0 +1,205 @@
+1.  
+    - HTML元素类型
+        - 内联元素：无且无法定义宽高、宽和高有其内容决定
+        - 块元素：可自定义宽高、独占一行
+        - 可变元素：根据上下文决定自己是块元素或内联元素
+    - img的元素类型及可定义宽高的原因
+        - Img是内联元素
+        - 因为img元素是inline-block
+---
+2.  
+    - overflow：hidden解决高度塌陷的原因
+        - ∵浮动元素是脱离普通流而独立出来的
+        - 而overflow：hidden是超出普通流部分隐藏
+        - 又∵父元素没有写高度的时候
+        - 它要计算全部子元素高度才能确定它在什么位置hidden
+    - 另外两种解决高度塌陷的方法
+        - 在浮动元素后加上一个空的div，给该元素加上声明clear：both； height：0； overflow：hidden（font-size：0）
+        - :after{content:"."; display:block; visibility:hidden; heght:0; clear:both;}
+---
+3.
+    - H5新增的表单元素
+        - datalist（输入域的选项列表常和option连用）
+        - keygen（密钥对产生器）
+        - output（不同类型的输出）
+    - H5新增输入（input）类型
+        - email
+        - url
+        - number
+        - range
+        - search
+        - color
+        - date pickers(date,month,week,datetime,datetime-local)
+---
+4.
+    - 通配选择符
+        - *{}
+    - 类型选择符
+        - E{} 
+    - 属性选择符
+       	- E[attr]{}
+        - E[attr = "value"]{}
+        - E[attr ~= "value"]{}
+        - E[attr |= "value"]{}
+        - E[attr ^= "value's first letter"]{}
+        - E[attr $= "value's last letter"]{}
+        - E[attr *= "one of value's letter"]{}
+    - 包含选择符
+        - E1 E2{}
+    - 类选择器符
+        - .class{}
+    - ID选择符
+        - #ID{}
+    - 子对象选择符
+        - E1>E2{}
+    - 选择符分组
+        - E1,E2,E3{}
+    - 伪类选择符
+        - E:fouse{}
+        - E:hover{}
+        - E:visit{}
+        - E:active{}
+        - E:nth-child(){}
+        - E:nth-of-type(odd or envn){}
+    - 可继承的属性有
+        - font-size font-family color
+---
+5. 
+    - CSS3新特性
+        - 边框
+            - border-radius
+            - border-image
+            - border-shadow
+        - 背景
+            - background-size
+            - background-origin
+        - 文本
+            - text-shadow
+            - word-wrap
+        - 字体
+            ```
+            @font-face{
+                font-family: myfamily;           /*定义自己字体的名字*/
+                src: url('Sansation_Light.ttf'),
+                     url('Sansation_Light.eot'); /* IE9+ */
+            }
+            div{
+                font-family:myFirstFont;
+            }
+            ```
+        - 转换与过渡
+            - transform
+            - transform-origin
+            - transfrom-style
+            - perspective
+            - perspective-origin
+            - backface-visibility
+            - transition
+        - 动画
+            ```
+            @keyframes myfirst{
+                from {background: red;}
+                to {background: yellow;}
+            }
+            div{
+                animation: myfirst 5s linear 2s infinite alternate;
+            }
+            ```
+        - 多列
+            - column-count
+            - column-span
+            - column-width
+            - column-fill
+            - column-gap
+            - column-rule
+        - 界面
+            - resize
+            - box-sizing
+            - outline-offset
+---
+6.
+    - HTML语义标签
+        - header
+        - nav
+        - section
+        - article
+        - aside
+        - footer
+        - main
+        - figure || figcaption
+---
+7.
+    - CSS中的定位
+        - CSS中的定位机制可分为相对定位、绝对定位和浮动
+        - 4种不同的定位类型
+            - static:   默认类型
+            - relative：相对其原位置进行定位移动
+            - absolute：脱离文档流，行对上个定义position的元素进行定位移动
+            - fix：     相对于整个视窗进行绝对定位
+---
+8.
+    - 精灵图
+        - 将多个背景图片整合到一张图片里面，再用CSS中的background-position进行调用
+    - 整合规则
+        - 排列要有序合理，留好足够的空间，防止出现不必要的背景
+        - 颜色相近放在一起，减少输出的色数
+        - 相比.gif尽量使用.png
+    - 优点
+        - 减少对服务端的请求次数
+        - 减小图片的总体体积
+        - 改变图片颜色较方便
+---
+9.
+    - CSS层叠
+        - 在HTML中每个元素有其所占空间，
+        - 横向为x轴，纵向为y轴，垂直于xy的方向为z轴
+        - 每个元素在z轴上所占的空间叫做层
+        - 每个层在y轴上的叠加叫做层叠
+    - 怎样解析层叠样式
+        - background/border < 负z-index < block < float < inline/inline-block < z-index:auto(0) < 正z-index 
+---
+10.
+    - 描述以下div的显示方式
+    ```
+    div{
+        width:200px;
+        height:300px;
+        box-sizing:border-box;
+        padding:10px;
+        border:10px solid #d00
+    }
+    ```
+    - 一个宽200px，高300px的盒子，内部宽10px、颜色为#d00的描边，如有内容则其与描边有10px的padding间隙
+---
+11.
+    - <img>的title属性：鼠标移在图片上所显示的文字信息
+    - <img>的alt属性：  当图片未加载出来时，所显示出来的文字信息
+---
+12.
+    - IE6及以下版本浏览器拥有默认高度
+        - Hack1：加上声明 font-size：0
+        - Hack2：加上声明 overflow：hidden
+---
+13.
+    - 浏览器及其内核
+        - Trident   （**IE** 遨游 360；不开源）
+        - Gecko     （壁虎 火狐）
+        - Presto    （Opera内核）
+        - Webkit    （Safari内核）
+        - Blink     （由Google和Opera Software开发的浏览器排版引擎）
+---
+14.
+    - 渐进增强
+        ```
+        -o-             <!--opera-->
+        -ms-            <!--IE-->
+        -moz-           <!--firfox-->
+        -webkit-        <!--google-->
+        ```
+    - 优雅降级
+        ```
+        -webkit-        <!--google-->
+        -moz-           <!--firfox-->
+        -ms-            <!--IE-->
+        -o-             <!--opera-->
+        ```

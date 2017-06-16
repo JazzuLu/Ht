@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+* {margin:0; padding:0;}
+ul li {list-style:none;}
+ul {width: 100%; height: 300px; background: #ddd; display: flex; margin-top: 10px; }
+ul li:nth-of-type(1) {width: 100px; height: 100px; border: 1px solid #b6b6b6;}
+ul li:nth-of-type(2) {width: 100px; height: 150px; border: 1px solid #b6b6b6;}
+ul li:nth-of-type(3) {width: 100px; height: 80px; border: 1px solid #b6b6b6;}
+p {line-height: 30px;}
+ul:nth-of-type(1) {align-items: flex-start;}
+ul:nth-of-type(2) {align-items: flex-end; }
+ul:nth-of-type(3) {align-items: center; }
+ul:nth-of-type(4) {align-items: baseline;}
+ul:nth-of-type(5) {align-items: stretch;}
+</style>
+
+<body>			
+<p>align-items: flex-start;默认情况以上边框为基准对齐</p>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>
+<p>align-items: flex-end;以底边为基准</p>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>	
+<p>align-items: center;居中</p>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>
+<p>align-items: baseline;文字对齐</p>
+<ul>
+	<li style="padding: 20px">a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>
+<p>	align-items: stretch;将未设置宽高的元素拉伸至最大</p>
+<ul>
+	<li style="padding: 20px;width: auto;height: auto;">a</li>
+	<li style="padding: 15px;width: auto;height: auto;">b</li>
+	<li style="padding: 10px;width: auto;height: auto;">c</li>
+</ul>
+
+
+</body>
+</html>
